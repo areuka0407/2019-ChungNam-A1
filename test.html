@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: calc(50% - 250px);
+            top: calc(50% - 250px);
+            background-color: #f2f2f2;
+        }
+
+        .line {
+            width: 500px;
+            height: 100px;
+            background-color: #f00;
+            transform-origin: left top;
+            animation: rotate 1s infinite linear;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="line"></div>
+    </div>
+</body>
+</html>
