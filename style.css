@@ -242,8 +242,8 @@ nav {
 
 nav .n-item {
     padding: 30px;
-    font-weight: bold;
-    color: #202020;
+    font-weight: 500;
+    color: #444;
 }
 
 nav .n-item a {  position: relative; }
@@ -254,10 +254,11 @@ nav .n-item a::after {
     bottom: -10px;
     height: 2px;
     width: 0;
-    background-color: #202020;
+    background-color: #3750da;
     transition: 0.2s;
 }
 
+nav .n-item:hover { color: #3750da }
 nav .n-item:hover a::after {
     transition: 0.4s;
     left: 0;
